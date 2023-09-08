@@ -1,0 +1,351 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="ai.hellodoctor"
+4    android:versionCode="3"
+5    android:versionName="1.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml
+10    <!-- 인터넷 (일반권한) -->
+11    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+11-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:5:5-81
+11-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:5:22-78
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:6:5-67
+12-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:7:5-79
+13-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:7:22-76
+14    <!-- 전화걸기 -->
+15    <uses-permission android:name="android.permission.CALL_PHONE" />
+15-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:9:5-69
+15-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:9:22-66
+16    <!-- 저장소 읽기/쓰기 -->
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:11:5-81
+17-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:11:22-78
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:12:5-80
+18-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:12:22-77
+19    <!-- 카메라 권한/기능 -->
+20    <uses-permission android:name="android.permission.CAMERA" />
+20-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:14:5-65
+20-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:14:22-62
+21
+22    <uses-feature android:name="android.hardware.camera" />
+22-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:15:5-60
+22-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:15:19-57
+23    <!-- 마이크 -->
+24    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+24-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:17:5-71
+24-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:17:22-68
+25    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+25-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:18:5-80
+25-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:18:22-77
+26    <!-- 위치권한 -->
+27    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+27-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:20:5-79
+27-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:20:22-76
+28
+29    <queries>
+29-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:22:5-24:15
+30        <package android:name="com.kakao.talk" />
+30-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:23:9-50
+30-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:23:18-47
+31    </queries>
+32
+33    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+33-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:23:5-68
+33-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:23:22-65
+34    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+34-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:5-82
+34-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:22-79
+35
+36    <uses-feature
+36-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\ceef10094bace0fc7f46395b5f0494f5\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+37        android:glEsVersion="0x00020000"
+37-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\ceef10094bace0fc7f46395b5f0494f5\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+38        android:required="true" />
+38-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\ceef10094bace0fc7f46395b5f0494f5\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+39
+40    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+40-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\eeb3b736a00df04e9cca534de45981a7\transformed\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:26:5-110
+40-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\eeb3b736a00df04e9cca534de45981a7\transformed\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:26:22-107
+41
+42    <application
+42-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:26:5-81:19
+43        android:allowBackup="true"
+43-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:27:9-35
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.5.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\b1fe9740f6c86f0b7649a763c3bf2b85\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+45        android:extractNativeLibs="false"
+46        android:icon="@mipmap/ic_launcher"
+46-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:28:9-43
+47        android:label="@string/app_name"
+47-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:29:9-41
+48        android:supportsRtl="true"
+48-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:30:9-35
+49        android:theme="@style/Theme.AppCompat.NoActionBar"
+49-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:31:9-59
+50        android:usesCleartextTraffic="true" >
+50-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:32:9-44
+51        <provider
+51-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:35:9-43:20
+52            android:name="androidx.core.content.FileProvider"
+52-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:36:13-62
+53            android:authorities="ai.hellodoctor.fileprovider"
+53-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:37:13-62
+54            android:exported="false"
+54-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:38:13-37
+55            android:grantUriPermissions="true" >
+55-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:39:13-47
+56            <meta-data
+56-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:40:13-42:58
+57                android:name="android.support.FILE_PROVIDER_PATHS"
+57-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:41:17-67
+58                android:resource="@xml/provider_paths" />
+58-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:42:17-55
+59        </provider>
+60
+61        <activity
+61-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:45:9-61:20
+62            android:name="ai.hellodoctor.MainActivity"
+62-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:46:13-41
+63            android:exported="true"
+63-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:48:13-36
+64            android:screenOrientation="portrait" >
+64-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:47:13-49
+65            <intent-filter>
+65-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:49:13-52:29
+66                <action android:name="android.intent.action.MAIN" />
+66-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:50:17-69
+66-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:50:25-66
+67
+68                <category android:name="android.intent.category.LAUNCHER" />
+68-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:51:17-77
+68-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:51:27-74
+69            </intent-filter>
+70            <intent-filter>
+70-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:53:13-60:29
+71                <action android:name="android.intent.action.VIEW" />
+71-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:54:17-69
+71-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:54:25-66
+72
+73                <category android:name="android.intent.category.DEFAULT" />
+73-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:55:17-76
+73-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:55:27-73
+74                <category android:name="android.intent.category.BROWSABLE" />
+74-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:56:17-78
+74-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:56:27-75
+75
+76                <data
+76-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:57:17-59:48
+77                    android:host="hellodr.app"
+77-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:58:21-47
+78                    android:scheme="hellodr" />
+78-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:59:21-45
+79            </intent-filter>
+80        </activity>
+81        <activity
+81-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:63:9-65:61
+82            android:name="ai.hellodoctor.SplashActivity"
+82-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:64:13-43
+83            android:screenOrientation="portrait" />
+83-->D:\Android\HelloDoctor\app\src\main\AndroidManifest.xml:65:13-49
+84
+85        <!--
+86        <service
+87            android:name=".MyFirebaseMessagingService"
+88            android:stopWithTask="false">
+89            <intent-filter>
+90                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+91            </intent-filter>
+92        </service>
+93        <meta-data
+94            android:name="com.google.firebase.messaging.default_notification_icon"
+95            android:resource="@mipmap/ic_launcher" />
+96        <meta-data
+97            android:name="com.google.firebase.messaging.default_notification_color"
+98            android:resource="@color/white" />
+99        -->
+100
+101        <activity
+101-->[io.github.ParkSangGwon:tedpermission:2.3.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\9f145cdded082a843c58acd94827b7a4\transformed\jetified-tedpermission-2.3.0\AndroidManifest.xml:10:9-14:67
+102            android:name="com.gun0912.tedpermission.TedPermissionActivity"
+102-->[io.github.ParkSangGwon:tedpermission:2.3.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\9f145cdded082a843c58acd94827b7a4\transformed\jetified-tedpermission-2.3.0\AndroidManifest.xml:11:13-75
+103            android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|screenLayout|fontScale|uiMode|orientation|screenSize|layoutDirection"
+103-->[io.github.ParkSangGwon:tedpermission:2.3.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\9f145cdded082a843c58acd94827b7a4\transformed\jetified-tedpermission-2.3.0\AndroidManifest.xml:12:13-144
+104            android:screenOrientation="unspecified"
+104-->[io.github.ParkSangGwon:tedpermission:2.3.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\9f145cdded082a843c58acd94827b7a4\transformed\jetified-tedpermission-2.3.0\AndroidManifest.xml:13:13-52
+105            android:theme="@style/Theme.Transparent.Permission" />
+105-->[io.github.ParkSangGwon:tedpermission:2.3.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\9f145cdded082a843c58acd94827b7a4\transformed\jetified-tedpermission-2.3.0\AndroidManifest.xml:14:13-64
+106
+107        <receiver
+107-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:28:9-35:20
+108            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+108-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:29:13-78
+109            android:exported="true"
+109-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:30:13-36
+110            android:permission="com.google.android.c2dm.permission.SEND" >
+110-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:31:13-73
+111            <intent-filter>
+111-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:32:13-34:29
+112                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+112-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:33:17-81
+112-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:33:25-78
+113            </intent-filter>
+114        </receiver>
+115        <!--
+116             FirebaseMessagingService performs security checks at runtime,
+117             but set to not exported to explicitly avoid allowing another app to call it.
+118        -->
+119        <service
+119-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:41:9-48:19
+120            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+120-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:42:13-82
+121            android:directBootAware="true"
+121-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:43:13-43
+122            android:exported="false" >
+122-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:44:13-37
+123            <intent-filter android:priority="-500" >
+123-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:45:13-47:29
+123-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:45:28-51
+124                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+124-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:46:17-78
+124-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:46:25-75
+125            </intent-filter>
+126        </service>
+127        <service
+127-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:49:9-55:19
+128            android:name="com.google.firebase.components.ComponentDiscoveryService"
+128-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:50:13-84
+129            android:directBootAware="true"
+129-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\4e43b310087c0a1804474a17df7fd7a2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+130            android:exported="false" >
+130-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:51:13-37
+131            <meta-data
+131-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:52:13-54:85
+132                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+132-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:53:17-119
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\2c908ea5bef4023df22d8255332ecddf\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:54:17-82
+134            <meta-data
+134-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\800e4d2a9f42f8dc1b8b11f4ecc1ef8b\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+135                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+135-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\800e4d2a9f42f8dc1b8b11f4ecc1ef8b\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\800e4d2a9f42f8dc1b8b11f4ecc1ef8b\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+137            <meta-data
+137-->[com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\fcfc8e2867873ccf8e941d2f43be5686\transformed\jetified-play-services-measurement-api-19.0.1\AndroidManifest.xml:30:13-32:85
+138                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+138-->[com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\fcfc8e2867873ccf8e941d2f43be5686\transformed\jetified-play-services-measurement-api-19.0.1\AndroidManifest.xml:31:17-139
+139                android:value="com.google.firebase.components.ComponentRegistrar" />
+139-->[com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\fcfc8e2867873ccf8e941d2f43be5686\transformed\jetified-play-services-measurement-api-19.0.1\AndroidManifest.xml:32:17-82
+140            <meta-data
+140-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\48a2ed64cac735136fc9b566ef579450\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+141                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+141-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\48a2ed64cac735136fc9b566ef579450\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+142                android:value="com.google.firebase.components.ComponentRegistrar" />
+142-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\48a2ed64cac735136fc9b566ef579450\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+143        </service> <!-- Needs to be explicitly declared on P+ -->
+144        <uses-library
+144-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\ceef10094bace0fc7f46395b5f0494f5\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+145            android:name="org.apache.http.legacy"
+145-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\ceef10094bace0fc7f46395b5f0494f5\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+146            android:required="false" />
+146-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\ceef10094bace0fc7f46395b5f0494f5\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+147
+148        <service
+148-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\57d0a902ee90bd507e41b75867cbb810\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+149            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+149-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\57d0a902ee90bd507e41b75867cbb810\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+150            android:exported="false" >
+150-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\57d0a902ee90bd507e41b75867cbb810\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+151            <meta-data
+151-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\57d0a902ee90bd507e41b75867cbb810\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+152                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+152-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\57d0a902ee90bd507e41b75867cbb810\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+153                android:value="cct" />
+153-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\57d0a902ee90bd507e41b75867cbb810\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+154        </service>
+155
+156        <provider
+156-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\4e43b310087c0a1804474a17df7fd7a2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+157            android:name="com.google.firebase.provider.FirebaseInitProvider"
+157-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\4e43b310087c0a1804474a17df7fd7a2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+158            android:authorities="ai.hellodoctor.firebaseinitprovider"
+158-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\4e43b310087c0a1804474a17df7fd7a2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+159            android:directBootAware="true"
+159-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\4e43b310087c0a1804474a17df7fd7a2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+160            android:exported="false"
+160-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\4e43b310087c0a1804474a17df7fd7a2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+161            android:initOrder="100" />
+161-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\4e43b310087c0a1804474a17df7fd7a2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+162
+163        <activity
+163-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\f959add506d5d15143d47ae57b803338\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+164            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+164-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\f959add506d5d15143d47ae57b803338\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+165            android:exported="false"
+165-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\f959add506d5d15143d47ae57b803338\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+166            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+166-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\f959add506d5d15143d47ae57b803338\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+167
+168        <receiver
+168-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\eeb3b736a00df04e9cca534de45981a7\transformed\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:29:9-33:20
+169            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+169-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\eeb3b736a00df04e9cca534de45981a7\transformed\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:30:13-85
+170            android:enabled="true"
+170-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\eeb3b736a00df04e9cca534de45981a7\transformed\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:31:13-35
+171            android:exported="false" >
+171-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\eeb3b736a00df04e9cca534de45981a7\transformed\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:32:13-37
+172        </receiver>
+173
+174        <service
+174-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\eeb3b736a00df04e9cca534de45981a7\transformed\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:35:9-38:40
+175            android:name="com.google.android.gms.measurement.AppMeasurementService"
+175-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\eeb3b736a00df04e9cca534de45981a7\transformed\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:36:13-84
+176            android:enabled="true"
+176-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\eeb3b736a00df04e9cca534de45981a7\transformed\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:37:13-35
+177            android:exported="false" />
+177-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\eeb3b736a00df04e9cca534de45981a7\transformed\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:38:13-37
+178        <service
+178-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\eeb3b736a00df04e9cca534de45981a7\transformed\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:39:9-43:72
+179            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+179-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\eeb3b736a00df04e9cca534de45981a7\transformed\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:40:13-87
+180            android:enabled="true"
+180-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\eeb3b736a00df04e9cca534de45981a7\transformed\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:41:13-35
+181            android:exported="false"
+181-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\eeb3b736a00df04e9cca534de45981a7\transformed\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:42:13-37
+182            android:permission="android.permission.BIND_JOB_SERVICE" />
+182-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\eeb3b736a00df04e9cca534de45981a7\transformed\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:43:13-69
+183
+184        <meta-data
+184-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\04996cf3406cf92a2f2c844516c2d5d9\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+185            android:name="com.google.android.gms.version"
+185-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\04996cf3406cf92a2f2c844516c2d5d9\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+186            android:value="@integer/google_play_services_version" />
+186-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\04996cf3406cf92a2f2c844516c2d5d9\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+187
+188        <service
+188-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\e303ee3a207949e242eec44c1d3a417c\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+189            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+189-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\e303ee3a207949e242eec44c1d3a417c\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+190            android:exported="false"
+190-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\e303ee3a207949e242eec44c1d3a417c\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+191            android:permission="android.permission.BIND_JOB_SERVICE" >
+191-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\e303ee3a207949e242eec44c1d3a417c\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+192        </service>
+193
+194        <receiver
+194-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\e303ee3a207949e242eec44c1d3a417c\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+195            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+195-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\e303ee3a207949e242eec44c1d3a417c\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
+196            android:exported="false" />
+196-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ITFORONE-RYU\.gradle\caches\transforms-3\e303ee3a207949e242eec44c1d3a417c\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+197    </application>
+198
+199</manifest>

@@ -1,0 +1,4 @@
+#Mon Dec 19 14:48:55 KST 2022
+base.0=D\:\\Android\\HelloDoctor\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

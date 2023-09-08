@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "D:\\Android\\HelloDoctor\\app\\build\\intermediates\\merged_res\\release\\xml_provider_paths.xml.flat",
+        "source": "D:\\Android\\HelloDoctor\\app\\src\\main\\res\\xml\\provider_paths.xml"
+    },
+    {
+        "merged": "D:\\Android\\HelloDoctor\\app\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\Android\\HelloDoctor\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Android\\HelloDoctor\\app\\build\\intermediates\\merged_res\\release\\drawable-xxxhdpi_splash.png.flat",
+        "source": "D:\\Android\\HelloDoctor\\app\\src\\main\\res\\drawable-xxxhdpi\\splash.png"
+    },
+    {
+        "merged": "D:\\Android\\HelloDoctor\\app\\build\\intermediates\\merged_res\\release\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\Android\\HelloDoctor\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Android\\HelloDoctor\\app\\build\\intermediates\\merged_res\\release\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\Android\\HelloDoctor\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Android\\HelloDoctor\\app\\build\\intermediates\\merged_res\\release\\layout_activity_splash.xml.flat",
+        "source": "D:\\Android\\HelloDoctor\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "D:\\Android\\HelloDoctor\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_splash.png.flat",
+        "source": "D:\\Android\\HelloDoctor\\app\\src\\main\\res\\drawable-hdpi\\splash.png"
+    },
+    {
+        "merged": "D:\\Android\\HelloDoctor\\app\\build\\intermediates\\merged_res\\release\\drawable-xhdpi_splash.png.flat",
+        "source": "D:\\Android\\HelloDoctor\\app\\src\\main\\res\\drawable-xhdpi\\splash.png"
+    },
+    {
+        "merged": "D:\\Android\\HelloDoctor\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_splash.png.flat",
+        "source": "D:\\Android\\HelloDoctor\\app\\src\\main\\res\\drawable-mdpi\\splash.png"
+    },
+    {
+        "merged": "D:\\Android\\HelloDoctor\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Android\\HelloDoctor\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Android\\HelloDoctor\\app\\build\\intermediates\\merged_res\\release\\layout_activity_main.xml.flat",
+        "source": "D:\\Android\\HelloDoctor\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Android\\HelloDoctor\\app\\build\\intermediates\\merged_res\\release\\drawable-xxhdpi_splash.png.flat",
+        "source": "D:\\Android\\HelloDoctor\\app\\src\\main\\res\\drawable-xxhdpi\\splash.png"
+    },
+    {
+        "merged": "D:\\Android\\HelloDoctor\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Android\\HelloDoctor\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    }
+]
